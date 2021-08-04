@@ -46,9 +46,32 @@ en:
       intro: "About the sample app at the"
       title: "about page"
   users:
+    index:
+      thead_name: "Name"
+      thead_email: "Email Address"
+      page_title: "All users"
+      not_found: "User not found"
     new:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
+      name: "Your name"
+      email: "Email address"
+      password: "Password"
+      password_confirm: "Confirm password"
+      submit: "Create account"
+    show:
+      page_title: "Information"
+      heading: "User Information"
+      name: "Name: "
+      email: "Email address: "
+      created_at: "Created at: "
+      updated_at: "Updated at: "
+      welcome: "Hi %{name}. Welcome to the Sample App!"
+    helper:
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
     login:
       page_title: "Login"
+  shared:
+    error_messages:
+      show_error_number: "The form contains %{error_number} error"
