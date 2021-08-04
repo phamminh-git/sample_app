@@ -17,6 +17,12 @@ en:
       vi: "Vietnamese"
       en: "English"
       signup: "Sign up now!"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      login: "Log in"
+      user: "User"
   static_pages:
     home:
       page_title: "Home"
@@ -75,3 +81,15 @@ en:
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
+  sessions:
+    new:
+      page_title: "Log in"
+      heading: "Log In"
+      label_email: "Email"
+      label_password: "Password"
+      submit: "Log in"
+      message: "New user?"
+      signup: "Sign up now!"
+    message:
+      login_fail: "Password or email wrong. Try again!"
+      login_success: "Log in successfully"

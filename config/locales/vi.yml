@@ -17,6 +17,12 @@ vi:
       vi: "Vietnamese"
       en: "English"
       signup: "Đăng ký ngay!"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
+      user: "Người dùng"
   static_pages:
     home:
       page_title: "Trang chủ"
@@ -75,3 +81,15 @@ vi:
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
+  sessions:
+    new:
+      page_title: "Đăng nhập"
+      heading: "Đăng nhập"
+      label_email: "Email"
+      label_password: "Mật khẩu"
+      submit: "Đăng nhập"
+      message: "Người dùng mới?"
+      signup: "Đăng ký ngay"
+    message:
+      login_fail: "Email hoặc mật khẩu không đúng. Vui lòng thử lại"
+      login_success: "Đăng nhập thành công"
