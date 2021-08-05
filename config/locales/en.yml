@@ -97,7 +97,6 @@ en:
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
       submit: "Create account"
-    show:
       page_title: "Information"
       heading: "User Information"
       name: "Name: "
