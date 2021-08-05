@@ -19,7 +19,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to t("layouts._header.profile"), current_user %></li>
-              <li><%= link_to t("layouts._header.setting"), "#" %></li>
+              <li><%= link_to t("layouts._header.setting"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
               <%= link_to t("layouts._header.logout"), logout_path, method: :delete %>

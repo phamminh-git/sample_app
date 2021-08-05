@@ -51,20 +51,47 @@ vi:
       heading: "Tìm hiểu"
       intro: "Tìm hiểu về sample app tại"
       title: "trang tìm hiểu"
+  user_mailer:
+    account_activations:
+      app_name: "Sample App"
+      greeting: "Xin chào, %{name}"
+      intro: "Chào mừng đến với Sample App! Click vào link bên dưới để kích hoạt tại khoản của bạn:"
+      activate: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      greeting: "Để đặt lại mật khẩu, vui lòng click link bên dưới"
+      reset_password: "Reset Password"
+      notice: "Đường dẫn này có hiệu lực trong 2 giờ"
+      message: "Nếu bạn không muốn đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ"
+      success: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      not_found: "Không tìm thấy địa chỉ email"
+      expired: "Thay đổi mật khẩu đã hết hạn"
+  password_resets:
+    new:
+      heading: "Quên mật khẩu"
+      page_title: "Quên mật khẩu"
+      submit: "Gửi"
+    edit:
+      heading: "Đặt lại mật khẩu"
+      page_title: "Đặt lại mật khẩu"
+      submit: "Thay đổi mật khẩu"
+  mailer:
+    mail_activate:
+      subject: "Kích hoạt tài khoản"
+    mail_reset:
+      subject: "Đặt lại tài khoản"
   users:
     index:
       thead_name: "Tên: "
       thead_email: "Địa chỉ email: "
       page_title: "All users"
       not_found: "Không tìm thấy người dùng phù hợp"
+      login_message: "Bắt buộc đăng nhập"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
-      name: "Tên của bạn"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
       submit: "Tạo tài khoản"
     show:
       page_title: "Thông tin"
@@ -78,6 +105,14 @@ vi:
       page_title: "Đăng nhập"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+    _form:
+      name: "Tên của bạn"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+    edit:
+      submit: "Sửa"
+      page_title: "Sửa user"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
@@ -91,6 +126,7 @@ vi:
       message: "Người dùng mới?"
       signup: "Đăng ký ngay"
       remember: "Nhớ đăng nhập vào máy tính"
+      forgot_password: "Quên mật khẩu"
     message:
       login_fail: "Email hoặc mật khẩu không đúng. Vui lòng thử lại"
       login_success: "Đăng nhập thành công"
