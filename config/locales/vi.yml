@@ -57,14 +57,11 @@ vi:
       thead_email: "Địa chỉ email: "
       page_title: "All users"
       not_found: "Không tìm thấy người dùng phù hợp"
+      login_message: "Bắt buộc đăng nhập"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
-      name: "Tên của bạn"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
       submit: "Tạo tài khoản"
     show:
       page_title: "Thông tin"
@@ -78,6 +75,19 @@ vi:
       page_title: "Đăng nhập"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+    form:
+      name: "Tên của bạn"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+    user:
+      show: "Show"
+      edit: "Chỉnh sửa"
+      delete: "Xóa"
+    edit:
+      submit: "Sửa"
+      page_title: "Sửa user"
+      heading: "Sửa thông tin user"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"

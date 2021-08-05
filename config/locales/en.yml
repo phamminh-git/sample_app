@@ -57,14 +57,11 @@ en:
       thead_email: "Email Address"
       page_title: "All users"
       not_found: "User not found"
+      login_message: "Login require"
     new:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
-      name: "Your name"
-      email: "Email address"
-      password: "Password"
-      password_confirm: "Confirm password"
       submit: "Create account"
     show:
       page_title: "Information"
@@ -78,6 +75,22 @@ en:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
     login:
       page_title: "Login"
+    _form:
+      name: "Your name"
+      email: "Email address"
+      password: "Password"
+      password_confirm: "Confirm password"
+    user:
+      show: "Show"
+      edit: "Edit"
+      delete: "Delete"
+    edit:
+      submit: "Edit"
+      page_title: "Edit user"
+      heading: "Edit user"
+    destroy:
+      success: "Success"
+      fail: "Fail"
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
