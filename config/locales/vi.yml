@@ -51,20 +51,35 @@ vi:
       heading: "Tìm hiểu"
       intro: "Tìm hiểu về sample app tại"
       title: "trang tìm hiểu"
+  user_mailer:
+    account_activations:
+      app_name: "Sample App"
+      greeting: "Xin chào, %{name}"
+      intro: "Chào mừng đến với Sample App! Click vào link bên dưới để kích hoạt tại khoản của bạn:"
+      activate: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"
+      password:
+        subject: "Password reset"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      greeting: "Để đặt lại mật khẩu, vui lòng click link bên dưới"
+      reset_password: "Reset Password"
+      notice: "Đường dẫn này có hiệu lực trong 2 giờ"
+      message: "Nếu bạn không muốn đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ"
+      success: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      not_found: "Không tìm thấy địa chỉ email"
+      expired: "Thay đổi mật khẩu đã hết hạn"
   users:
     index:
       thead_name: "Tên: "
       thead_email: "Địa chỉ email: "
       page_title: "All users"
       not_found: "Không tìm thấy người dùng phù hợp"
+      login_message: "Bắt buộc đăng nhập"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
-      name: "Tên của bạn"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
       submit: "Tạo tài khoản"
     show:
       page_title: "Thông tin"
@@ -74,13 +89,49 @@ vi:
       created_at: "Thời điểm tạo: "
       updated_at: "Thời điểm cập nhật cuối: "
       welcome: "Chào mừng %{name} đến với Sample App"
+      count: "Micropost (%{count})"
     login:
       page_title: "Đăng nhập"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+    _form:
+      name: "Tên của bạn"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+    edit:
+      submit: "Sửa"
+      page_title: "Sửa user"
+    create:
+      success: "Thành công"
+      fail: "Thất bại"
+      info: "Vui lòng kiểm tra mail để kích hoạt tài khoản của bạn"
+    update:
+      success: "Thành công"
+      fail: "Thất bại"
+    destroy:
+      success: "Thành công"
+      fail: "Thất bại"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+    feed:
+      feed_title: "Micropost Feed"
+  password_resets:
+    new:
+      page_title: "Forgot password"
+      heading: "Forgot password"
+      submit: "Submit"
+      email: "Email Address"
+    edit:
+      page_title: "Reset password"
+      heading: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Confirm Password"
   sessions:
     new:
       page_title: "Đăng nhập"
@@ -91,6 +142,21 @@ vi:
       message: "Người dùng mới?"
       signup: "Đăng ký ngay"
       remember: "Nhớ đăng nhập vào máy tính"
+      forgot_password: "Quên mật khẩu"
     message:
       login_fail: "Email hoặc mật khẩu không đúng. Vui lòng thử lại"
       login_success: "Đăng nhập thành công"
+  microposts:
+    micropost:
+      time_ago: "Đã đăng %{time} trước."
+      delete: "Xóa"
+      data_confirm: "Are you sure?"
+    message:
+      login_require: "Please log in"
+      create_success: "Micropost created!"
+      create_fail: "Create fail!"
+      delete_success: "Micropost deleted"
+      delete_fail: "Delete fail"
+      invalid: "Micropost invalid"
+      valid_format_image: "must be a valid image format"
+      image_size_warning: "Maximum file size is 5MB. Please choose a smaller file."
