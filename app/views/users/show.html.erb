@@ -2,7 +2,7 @@
 <h3>
   <%= t ".heading" %>
 </h3>
-<div class="user-info">
+<div class="user-info col-md-4">
   <div class="user-avatar">
     <%= gravatar_for @user %>
   </div>
@@ -15,4 +15,15 @@
     <br />
     <%= t ".updated_at" %><%= @user.updated_at.strftime Settings.date.format %>
   </div>
+</div>
+
+<div class="col-md-8">
+  <%= render "follow_form" if logged_in? %>
+  <% if @microposts.any? %>
+    <h3><%= t ".count", count: @microposts.count %></h3>
+    <ol class="microposts">
+      <%= render @microposts %>
+    </ol>
+    <%= paginate @microposts, theme: "twitter-bootstrap-3" %>
+  <% end %>
 </div>
