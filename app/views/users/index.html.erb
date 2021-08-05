@@ -3,16 +3,12 @@
 <table class="table">
   <thead>
     <tr>
+      <th scope="col"><%= t ".avatar" %></th>
       <th scope="col"><%= t ".thead_name" %></th>
       <th scope="col"><%= t ".thead_email" %></th>
     </tr>
   </thead>
   <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-      </tr>
-    <% end %>
+    <%= render @users %>
   </tbody>
 </table>

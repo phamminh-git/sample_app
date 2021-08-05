@@ -51,20 +51,39 @@ en:
       heading: "About"
       intro: "About the sample app at the"
       title: "about page"
+  user_mailer:
+    account_activations:
+      app_name: "Sample App"
+      greeting: "Hi, %{name}"
+      intro: "Welcome to the Sample App! Click on the link below to activate
+      your account:"
+      activate: "Activate"
+      subject: "Account activation"
+      password:
+        subject: "Password reset"
+      success: "Account activated"
+      danger: "Invalid activation link"
+    password_reset:
+      subject: "Password Reset"
+      greeting: "To reset your password click the link below:"
+      reset_password: "Reset Password"
+      notice: "This link will expire in two hours"
+      message: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+      success: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+      expired: "Password reset has expired."
   users:
     index:
       thead_name: "Name"
       thead_email: "Email Address"
       page_title: "All users"
       not_found: "User not found"
+      login_message: "Login require"
     new:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
-      name: "Your name"
-      email: "Email address"
-      password: "Password"
-      password_confirm: "Confirm password"
       submit: "Create account"
     show:
       page_title: "Information"
@@ -74,13 +93,37 @@ en:
       created_at: "Created at: "
       updated_at: "Updated at: "
       welcome: "Hi %{name}. Welcome to the Sample App!"
+      count: "Micropost (%{count})"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
     login:
       page_title: "Login"
+    _form:
+      name: "Your name"
+      email: "Email address"
+      password: "Password"
+      password_confirm: "Confirm password"
+    edit:
+      submit: "Edit"
+      page_title: "Edit user"
+    create:
+      success: "Success"
+      fail: "Fail"
+      info: "Please check your email to activate your account"
+    update:
+      success: "Success"
+      fail: "Fail"
+    destroy:
+      success: "Success"
+      fail: "Fail"
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+    feed:
+      feed_title: "Micropost Feed"
   sessions:
     new:
       page_title: "Log in"
@@ -91,6 +134,33 @@ en:
       message: "New user?"
       signup: "Sign up now!"
       remember: "Remember me on this computer"
+      forgot_password: "Forgot Password"
     message:
       login_fail: "Password or email wrong. Try again!"
       login_success: "Log in successfully"
+  password_resets:
+    new:
+      page_title: "Forgot password"
+      heading: "Forgot password"
+      submit: "Submit"
+      email: "Email Address"
+    edit:
+      page_title: "Reset password"
+      heading: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Confirm Password"
+  microposts:
+    micropost:
+      time_ago: "Posted %{time} ago."
+      delete: "Delete"
+      data_confirm: "Are you sure?"
+    message:
+      login_require: "Please log in"
+      create_success: "Micropost created!"
+      create_fail: "Create fail!"
+      delete_success: "Micropost deleted"
+      delete_fail: "Delete fail"
+      invalid: "Micropost invalid"
+      valid_format_image: "must be a valid image format"
+      image_size_warning: "Maximum file size is 5MB. Please choose a smaller file."
