@@ -90,6 +90,7 @@ vi:
       submit: "Đăng nhập"
       message: "Người dùng mới?"
       signup: "Đăng ký ngay"
+      remember: "Nhớ đăng nhập vào máy tính"
     message:
       login_fail: "Email hoặc mật khẩu không đúng. Vui lòng thử lại"
       login_success: "Đăng nhập thành công"

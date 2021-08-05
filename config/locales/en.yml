@@ -90,6 +90,7 @@ en:
       submit: "Log in"
       message: "New user?"
       signup: "Sign up now!"
+      remember: "Remember me on this computer"
     message:
       login_fail: "Password or email wrong. Try again!"
       login_success: "Log in successfully"
