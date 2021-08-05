@@ -51,20 +51,26 @@ vi:
       heading: "Tìm hiểu"
       intro: "Tìm hiểu về sample app tại"
       title: "trang tìm hiểu"
+  user_mailer:
+    account_activation:
+      app_name: "Sample App"
+      greeting: "Xin chào, %{name}"
+      intro: "Chào mừng đến với Sample App! Click vào link bên dưới để kích hoạt tại khoản của bạn:"
+      activate: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"
+      password:
+        subject: "Password reset"
   users:
     index:
       thead_name: "Tên: "
       thead_email: "Địa chỉ email: "
       page_title: "All users"
       not_found: "Không tìm thấy người dùng phù hợp"
+      login_message: "Bắt buộc đăng nhập"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
-      name: "Tên của bạn"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
       submit: "Tạo tài khoản"
     show:
       page_title: "Thông tin"
@@ -78,6 +84,32 @@ vi:
       page_title: "Đăng nhập"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+    _form:
+      name: "Tên của bạn"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+    user:
+      show: "Show"
+      edit: "Chỉnh sửa"
+      delete: "Xóa"
+    show:
+      page_title: "User"
+    create:
+      info: "Vui lòng kiểm tra email để kích hoạt tài khoản"
+    edit:
+      submit: "Sửa"
+      page_title: "Sửa user"
+    create:
+      success: "Thành công"
+      fail: "Thất bại"
+      info: "Vui lòng kiểm tra mail để kích hoạt tài khoản của bạn"
+    update:
+      success: "Thành công"
+      fail: "Thất bại"
+    destroy:
+      success: "Thành công"
+      fail: "Thất bại"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
