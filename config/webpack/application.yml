@@ -1,0 +1,6 @@
+host: "localhost:3000"
+host_email: "phamminhptit@gmail.com"
+mail_username: "phamminhptit@gmail.com"
+mail_password: "phamminh"
+address: "smtp.gmail.com"
+port: 587
