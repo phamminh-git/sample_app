@@ -55,13 +55,36 @@ en:
     account_activation:
       app_name: "Sample App"
       greeting: "Hi, %{name}"
-      intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+      intro: "Welcome to the Sample App! Click on the link below to activate
+      your account:"
       activate: "Activate"
       subject: "Account activation"
-      password:
-        subject: "Password reset"
       success: "Account activated"
       danger: "Invalid activation link"
+    password_reset:
+      subject: "Password reset"
+      greeting: "To reset your password click the link below:"
+      reset_password: "Reset Password"
+      notice: "This link will expire in two hours"
+      message: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+      success: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+      expired: "Password reset has expired."
+  password_resets:
+    new:
+      heading: "Forgot password"
+      page_title: "Forgot password"
+      submit: "Submit"
+    edit:
+      heading: "Reset Password"
+      page_title: "Reset password"
+      submit: "Update password"
+  mailer:
+    mail_activate:
+      subject: "Account activation"
+    mail_reset:
+      subject: "Account reset"
   users:
     index:
       thead_name: "Name"
@@ -90,25 +113,9 @@ en:
       email: "Email address"
       password: "Password"
       password_confirm: "Confirm password"
-    user:
-      show: "Show"
-      edit: "Edit"
-      delete: "Delete"
-    show:
-      page_title: "User"
-    create:
-      info: "Please check your email to activate your account."
     edit:
       submit: "Edit"
       page_title: "Edit user"
-      heading: "Edit user"
-    destroy:
-      success: "Success"
-      fail: "Fail"
-      info: "Please check your email to activate your account"
-    update:
-      success: "Success"
-      fail: "Fail"
     destroy:
       success: "Success"
       fail: "Fail"
@@ -125,6 +132,7 @@ en:
       message: "New user?"
       signup: "Sign up now!"
       remember: "Remember me on this computer"
+      forgot_password: "Forgot Password"
     message:
       login_fail: "Password or email wrong. Try again!"
       login_success: "Log in successfully"

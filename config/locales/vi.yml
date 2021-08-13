@@ -52,14 +52,35 @@ vi:
       intro: "Tìm hiểu về sample app tại"
       title: "trang tìm hiểu"
   user_mailer:
-    account_activation:
+    account_activations:
       app_name: "Sample App"
       greeting: "Xin chào, %{name}"
       intro: "Chào mừng đến với Sample App! Click vào link bên dưới để kích hoạt tại khoản của bạn:"
       activate: "Kích hoạt"
       subject: "Kích hoạt tài khoản"
-      password:
-        subject: "Password reset"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      greeting: "Để đặt lại mật khẩu, vui lòng click link bên dưới"
+      reset_password: "Reset Password"
+      notice: "Đường dẫn này có hiệu lực trong 2 giờ"
+      message: "Nếu bạn không muốn đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ"
+      success: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      not_found: "Không tìm thấy địa chỉ email"
+      expired: "Thay đổi mật khẩu đã hết hạn"
+  password_resets:
+    new:
+      heading: "Quên mật khẩu"
+      page_title: "Quên mật khẩu"
+      submit: "Gửi"
+    edit:
+      heading: "Đặt lại mật khẩu"
+      page_title: "Đặt lại mật khẩu"
+      submit: "Thay đổi mật khẩu"
+  mailer:
+    mail_activate:
+      subject: "Kích hoạt tài khoản"
+    mail_reset:
+      subject: "Đặt lại tài khoản"
   users:
     index:
       thead_name: "Tên: "
@@ -89,27 +110,9 @@ vi:
       email: "Địa chỉ email"
       password: "Mật khẩu"
       password_confirm: "Nhập lại mật khẩu"
-    user:
-      show: "Show"
-      edit: "Chỉnh sửa"
-      delete: "Xóa"
-    show:
-      page_title: "User"
-    create:
-      info: "Vui lòng kiểm tra email để kích hoạt tài khoản"
     edit:
       submit: "Sửa"
       page_title: "Sửa user"
-    create:
-      success: "Thành công"
-      fail: "Thất bại"
-      info: "Vui lòng kiểm tra mail để kích hoạt tài khoản của bạn"
-    update:
-      success: "Thành công"
-      fail: "Thất bại"
-    destroy:
-      success: "Thành công"
-      fail: "Thất bại"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
@@ -123,6 +126,7 @@ vi:
       message: "Người dùng mới?"
       signup: "Đăng ký ngay"
       remember: "Nhớ đăng nhập vào máy tính"
+      forgot_password: "Quên mật khẩu"
     message:
       login_fail: "Email hoặc mật khẩu không đúng. Vui lòng thử lại"
       login_success: "Đăng nhập thành công"
